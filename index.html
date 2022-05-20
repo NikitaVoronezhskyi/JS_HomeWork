@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://kit.fontawesome.com/" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://kit.fontawesome.com/7cc25a8466.js" crossorigin="anonymous"></script>
+    <title>JS</title>
+</head>
+
+<body>
+    <h1 class="common-title" id="common-title">Movies Cards</h1>
+    <section class="section">
+        <div class="movieList" id="movieList">
+            <div class="movie">
+                <h2 class="common-sm-title">${movie.name} (${movie.year})</h2>
+                <img src="#" alt="#">
+                <h3 class="common-text">${movie.director}</h3>
+                <p class="common-text"></p>
+                <div class="rating">
+                <input id="stars" class="stars" value="4.5" min="1" max="10" step="0.5" type="range">
+                <div class="stars-rating"></div>
+                <p class="rating-value">4.5</p>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="section">
+        <form class="form "action="">
+            <input type="text">
+            <input type="text">
+            <input type="text">
+            <input type="text">
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <div class="form-btn">
+                <button type="submit">Send</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </section>
+    <script src="./data/movies.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
