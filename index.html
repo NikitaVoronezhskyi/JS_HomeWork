@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="preconnect" href="https://kit.fontawesome.com/" crossorigin>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/7cc25a8466.js" crossorigin="anonymous"></script>
     <title>JS</title>
 </head>
@@ -21,12 +21,19 @@
                 <img src="#" alt="#">
                 <h3 class="common-text">${movie.director}</h3>
                 <p class="common-text"></p>
-                <div class="rating">
-                <input id="stars" class="stars" value="4.5" min="1" max="10" step="0.5" type="range">
-                <div class="stars-rating"></div>
-                <p class="rating-value">4.5</p>
+                <div id="rating" class="rating">
+                        <input value="5" class="star-radio" type="radio" name="star5" id="star5">
+                        <label for="star5"></label>
+                        <input value="4" class="star-radio" type="radio" name="star4" id="star4">
+                        <label for="star4"></label>
+                        <input value="3" class="star-radio" type="radio" name="star3" id="star3">
+                        <label for="star3"></label> 
+                        <input value="2" class="star-radio" type="radio" name="star2" id="star2">
+                        <label for="star2"></label>
+                        <input value="1" class="star-radio" type="radio" name="star1" id="star1">
+                        <label for="star1"></label>
+                </div>
             </div>
-        </div>
         </div>
     </section>
     <section class="section">

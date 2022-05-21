@@ -1,6 +1,6 @@
 const movies = JSON.parse(mockedMovies);
 const movieList = document.getElementById('movieList');
-
+const ratingDiv = document.getElementById("rating")
 
 
 
@@ -76,5 +76,8 @@ function makeStarTemplate(quantity) {
      return half
   }
 }
+
+
+
 
 

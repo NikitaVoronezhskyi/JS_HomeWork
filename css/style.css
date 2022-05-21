@@ -17,7 +17,7 @@ img {
 
 body {
     font-family: Poppins, sans-serif;
-    background: lightblue;
+    background: coral;
 }
 
 .common-title{
@@ -90,3 +90,31 @@ body {
 }
 
 
+.rating{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex-direction: row-reverse;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    cursor: pointer;
+    width: 2rem;
+}
+
+.rating label::after{
+    transition: 0.1s;
+    content: "★";
+    font-size: 2rem;
+    text-shadow: 0 2px 5px rgba(0, 0, 0 , 0.5);
+}
+
+.rating label:hover::after,
+.rating label:hover ~ label::after,
+.rating input:checked ~ label::after{
+    color: orange;
+}
